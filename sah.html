@@ -1,0 +1,138 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CHESS</title>
+    
+    <style type="text/css">
+
+        .clr {
+            background-color: green; 
+            float: left;
+            width: 80px;
+            height: 80px;
+            font-size: 50px;
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .chessboard {
+            width: 640px;
+            height: 640px;
+            margin: 20px;
+            border: 25px solid #333;
+            position: absolute;
+            left: 50%;
+            top:50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .black {
+            float: left;
+            width: 80px;
+            height: 80px;
+            background-color: #999;
+            font-size: 50px;
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .white {
+            float: left;
+            width: 80px;
+            height: 80px;
+            background-color: #fff;
+            font-size: 50px;
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="chessboard">
+        <!-- 8th -->
+        <div id="7+0" class="white field blackrook1">&#9820;</div>
+        <div id="7+1" class="black field blackknight1">&#9822;</div>
+        <div id="7+2" class="white field blackbishop1">&#9821;</div>
+        <div id="7+3" class="black field blackqueen">&#9819;</div>
+        <div id="7+4" class="white field blackking">&#9818;</div>
+        <div id="7+5" class="black field blackbishop2">&#9821;</div>
+        <div id="7+6" class="white field blackknight2">&#9822;</div>
+        <div id="7+7" class="black field blackrook2">&#9820;</div>
+        <!-- 7th -->
+        <div id="6+0" class="black field blackpawn1">&#x265F;</div>
+        <div id="6+1" class="white field blackpawn2">&#x265F;</div>
+        <div id="6+2" class="black field blackpawn3">&#x265F;</div>
+        <div id="6+3" class="white field blackpawn4">&#x265F;</div>
+        <div id="6+4" class="black field blackpawn5">&#x265F;</div>
+        <div id="6+5" class="white field blackpawn6">&#x265F;</div>
+        <div id="6+6" class="black field blackpawn7">&#x265F;</div>
+        <div id="6+7" class="white field blackpawn8">&#x265F;</div>
+        <!-- 6th -->
+        <div id="5+0" class="white field"></div>
+        <div id="5+1" class="black field"></div>
+        <div id="5+2" class="white field"></div>
+        <div id="5+3" class="black field"></div>
+        <div id="5+4" class="white field"></div>
+        <div id="5+5" class="black field"></div>
+        <div id="5+6" class="white field"></div>
+        <div id="5+7" class="black field"></div>
+        <!-- 5th -->
+        <div id="4+0" class="black field"></div>
+        <div id="4+1" class="white field"></div>
+        <div id="4+2" class="black field"></div>
+        <div id="4+3" class="white field"></div>
+        <div id="4+4" class="black field"></div>
+        <div id="4+5" class="white field"></div>
+        <div id="4+6" class="black field"></div>
+        <div id="4+7" class="white field"></div>
+        <!-- 4th -->
+        <div id="3+0" class="white field" ></div>
+        <div id="3+1" class="black field"></div>
+        <div id="3+2" class="white field"></div>
+        <div id="3+3" class="black field"></div>
+        <div id="3+4" class="white field"></div>
+        <div id="3+5" class="black field"></div>
+        <div id="3+6" class="white field"></div>
+        <div id="3+7" class="black field"></div>
+        <!-- 3rd -->
+        <div id="2+0" class="black field"></div>
+        <div id="2+1" class="white field"></div>
+        <div id="2+2" class="black field"></div>
+        <div id="2+3" class="white field"></div>
+        <div id="2+4" class="black field"></div>
+        <div id="2+5" class="white field"></div>
+        <div id="2+6" class="black field"></div>
+        <div id="2+7" class="white field"></div>
+        <!-- 2nd -->
+        <div id="1+0" class="white field whitepawn1 ">&#9817;</div>
+        <div id="1+1" class="black field whitepawn2">&#9817;</div>
+        <div id="1+2" class="white field whitepawn3">&#9817;</div>
+        <div id="1+3" class="black field whitepawn4">&#9817;</div>
+        <div id="1+4" class="white field whitepawn5">&#9817;</div>
+        <div id="1+5" class="black field whitepawn6">&#9817;</div>
+        <div id="1+6" class="white field whitepawn7">&#9817;</div>
+        <div id="1+7" class="black field whitepawn8">&#9817;</div>
+        <!-- 1st -->
+        <div id="0+0" class="black field whiterook1">&#9814;</div>
+        <div id="0+1" class="white field whiteknight1">&#9816;</div>
+        <div id="0+2" class="black field whitebishop1">&#9815;</div>
+        <div id="0+3" class="white field whitequeen">&#9813;</div>
+        <div id="0+4" class="black field whiteking">&#9812;</div>
+        <div id="0+5" class="white field whitebishop2">&#9815;</div>
+        <div id="0+6" class="black field whiteknight2">&#9816;</div>
+        <div id="0+7" class="white field whiterook2" >&#9814;</div>
+    </div>
+
+    <script src="chess.js">
+    </script>    
+    <script src="movement.js"></script>
+
+
+</body>
+
+</html>  
